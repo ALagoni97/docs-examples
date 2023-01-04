@@ -9,9 +9,8 @@ import { readFileSync } from 'fs';
 
 // Note: this only works locally because it relies on `npm` routing
 // from the root directory of the project.
-const typeDefs = readFileSync('./src/schema/schema.graphql', { encoding: 'utf-8' });
+const typeDefs = readFileSync('./schema.graphql', { encoding: 'utf-8' });
 
-console.log("trtt", typeDefs)
 export interface MyContext {
   dataSources: {
     booksAPI: BooksDataSource;
